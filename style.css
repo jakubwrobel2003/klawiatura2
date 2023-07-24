@@ -1,0 +1,44 @@
+body {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main,
+.game-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.game {
+  display: grid;
+  grid-template-columns: repeat(16, 50px);
+  grid-template-rows: repeat(4, auto);
+}
+.two-col {
+  grid-column: span 2;
+}
+.three-col {
+  grid-column: span 3;
+}
+.seven-col {
+  grid-column: span 7;
+}
+.two-row {
+  grid-row: span 2;
+}
+button {
+  margin: 2px;
+  background-color: #94e1ff;
+}
+.two-row-two-col {
+  grid-column: 15/17; /* Przycisk oznaczony jako two-row-two-col zajmuje 2 kolumny */
+  grid-row: span 2;
+  /* Przycisk oznaczony jako two-row-two-col zajmuje 2 rzędy */
+}
+
+.btn-active {
+  background-color: #2a9d8f;
+}
